@@ -1,0 +1,4 @@
+message = input("Enter a message with extra spaces: ")
+clean_message = " ".join(message.split())
+print("\nCleaned Message:")
+print(clean_message)

@@ -1,0 +1,14 @@
+password = input("Enter a password: ")
+has_upper = any(char.isupper() for char in password)
+has_lower = any(char.islower() for char in password)
+has_digit = any(char.isdigit() for char in password)
+is_long = len(password) >= 8
+
+if has_upper and has_lower and has_digit and is_long:
+    print("Password is strong.")
+else:
+    print("Password is weak. Make sure it has:")
+    if not has_upper: print("- At least one uppercase letter")
+    if not has_lower: print("- At least one lowercase letter")
+    if not has_digit: print("- At least one digit")
+    if not is_long: print("- Minimum length of 8 characters")

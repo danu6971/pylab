@@ -1,0 +1,4 @@
+"Student: Arjun Mehta\nFinal Grade: A"
+student_name = input("Enter student's name: ")
+grade = input("Enter final grade: ")
+print(f"\nStudent: {student_name}\nFinal Grade: {grade}")

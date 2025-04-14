@@ -1,0 +1,8 @@
+customer_name = input("Enter customer name: ")
+product = input("Enter product name: ")
+price = float(input("Enter product price: ₹"))
+print("\n----- INVOICE -----")
+print(f"Customer Name: {customer_name}")
+print(f"Product: {product}")
+print(f"Price: ₹{price:.2f}")
+print("-------------------")
