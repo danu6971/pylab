@@ -1,0 +1,5 @@
+colors = ['red', 'green', 'white', 'black']
+print("Original list:", colors)
+print("Traverse the said list in reverse order:")
+for i in reversed(range(len(colors))):
+    print(f"{colors[i]} (original index: {i})")

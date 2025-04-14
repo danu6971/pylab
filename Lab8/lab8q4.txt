@@ -1,0 +1,6 @@
+numbers = [1, 2, 3, 4, 5, 3, 2, 6, 7, 8, 1, 9]
+duplicates = []
+for num in numbers:
+    if numbers.count(num) > 1 and num not in duplicates:
+        duplicates.append(num)
+print("Duplicate values are:", duplicates)
