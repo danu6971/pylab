@@ -1,0 +1,2 @@
+even_numbers = list(range(10, 51, 2))
+print("Even numbers from 10 to 50:", even_numbers)

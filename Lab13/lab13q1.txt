@@ -1,0 +1,16 @@
+import numpy as np
+
+# Convert list to numpy array
+my_list = [1, 2, 3, 4, 5]
+arr = np.array(my_list)
+
+# Display array
+print("Array:", arr)
+
+# Display first and last element
+print("First element:", arr[0])
+print("Last element:", arr[-1])
+
+# Multiply each element by 2
+doubled_arr = arr * 2
+print("Array after doubling each element:", doubled_arr)
