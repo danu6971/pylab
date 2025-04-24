@@ -1,0 +1,6 @@
+exam_scores = [88, 72, 93, 65, 100, 79]
+highest = max(exam_scores)
+lowest = min(exam_scores)
+
+print("Highest score:", highest)
+print("Lowest score:", lowest)

@@ -1,0 +1,4 @@
+monthly_expenses = [1200, 1150, 1300, 1100, 1250, 1400, 1350, 1250, 1200, 1300, 1280, 1320]
+yearly_total = sum(monthly_expenses)
+
+print("Total yearly expense:", yearly_total)
