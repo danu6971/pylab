@@ -1,0 +1,19 @@
+# Custom exception class
+class InvalidScoreError(Exception):
+    pass
+
+# Function to validate score
+def validate_score(score):
+    if score < 0 or score > 100:
+        raise InvalidScoreError("Score must be between 0 and 100.")
+    return "Score is valid."
+
+# Main code with exception handling
+try:
+    score_input = int(input("Enter exam score (0–100): "))
+    result = validate_score(score_input)
+    print(result)
+except InvalidScoreError as e:
+    print(f"InvalidScoreError: {e}")
+except ValueError:
+    print("Error: Please enter a valid integer.")
