@@ -1,0 +1,9 @@
+subjects = ['Math', 'Science', 'History', 'English', 'Art']
+marks = [85, 90, 78, 88, 76]
+
+plt.bar(subjects, marks, color='skyblue')
+plt.title('Marks in 5 Subjects')
+plt.xlabel('Subjects')
+plt.ylabel('Marks')
+plt.ylim(0, 100)
+plt.show()

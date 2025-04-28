@@ -1,0 +1,6 @@
+activities = ['Sleep', 'Study', 'Entertainment', 'Exercise', 'Others']
+hours = [8, 6, 4, 2, 4]  # Example: out of 24 hours
+
+plt.pie(hours, labels=activities, autopct='%1.1f%%', startangle=140)
+plt.title('Daily Activities Distribution')
+plt.show()

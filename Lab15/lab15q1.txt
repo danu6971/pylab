@@ -1,0 +1,9 @@
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+temperatures = [30, 32, 34, 33, 31, 29, 28]
+
+plt.plot(days, temperatures, marker='o')
+plt.title('Temperature Over 7 Days')
+plt.xlabel('Days')
+plt.ylabel('Temperature (°C)')
+plt.grid(True)
+plt.show()
