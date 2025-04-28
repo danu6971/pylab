@@ -1,0 +1,3 @@
+sales = [25000, 32000, 40000, 28000]
+worst_store_index = sales.index(min(sales))
+print(worst_store_index)

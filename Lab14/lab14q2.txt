@@ -1,0 +1,4 @@
+marks = [78, 65, 89, 90, 56, 80]
+group_size = len(marks) // 3
+groups = [marks[i:i + group_size] for i in range(0, len(marks), group_size)]
+print(groups)

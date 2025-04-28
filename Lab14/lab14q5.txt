@@ -1,0 +1,5 @@
+import bisect
+
+prices = [10, 20, 30, 50]
+insert_index = bisect.bisect_left(prices, 25)
+print(insert_index)
