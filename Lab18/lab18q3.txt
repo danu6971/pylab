@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Sample E-commerce Transaction Data
+data = {
+    'Order_ID': ['O1001', 'O1002', 'O1003', 'O1004', 'O1005'],
+    'Customer_Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Product': ['Laptop', 'Headphones', 'Smartphone', 'Keyboard', 'Mouse'],
+    'Amount': [900, 150, 700, 80, 40],
+    'Order_Date': pd.to_datetime(['2025-05-01', '2025-05-02', '2025-05-03', '2025-05-04', '2025-05-05'])
+}
+
+df = pd.DataFrame(data)
+
+# Adding Shipping_Partner and Review_Rating columns
+df['Shipping_Partner'] = ['FedEx', 'DHL', 'UPS', 'Amazon Logistics', 'Blue Dart']
+df['Review_Rating'] = [4.5, 4.0, 3.8, 4.2, 4.7]
+print(df)

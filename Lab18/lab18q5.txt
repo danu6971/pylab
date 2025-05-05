@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Sample E-commerce Transaction Data
+data = {
+    'Order_ID': ['O1001', 'O1002', 'O1003', 'O1004', 'O1005'],
+    'Customer_Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Product': ['Laptop', 'Headphones', 'Smartphone', 'Keyboard', 'Mouse'],
+    'Amount': [900, 150, 700, 80, 40],
+    'Order_Date': pd.to_datetime(['2025-05-01', '2025-05-02', '2025-05-03', '2025-05-04', '2025-05-05'])
+}
+
+df = pd.DataFrame(data)
+
+# Dropping Review_Rating column
+df.drop('Review_Rating', axis=1, inplace=True)
+print(df)
