@@ -1,0 +1,20 @@
+import pandas as pd
+
+# Expense categories
+categories = ['Groceries', 'Utilities', 'Rent', 'Transportation', 'Entertainment']
+
+# Monthly expense data
+expenses = [500, 200, 1200, 300, 150]
+
+# Create a Pandas Series
+expense_series = pd.Series(expenses, index=categories)
+
+# Display the Series
+print("Household Expenses:")
+print(expense_series)
+
+# Total expense
+print("\nTotal Monthly Expense: $", expense_series.sum())
+
+# Category with highest expense
+print("Highest Expense Category:", expense_series.idxmax())

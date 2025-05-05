@@ -1,0 +1,23 @@
+# Create dataset
+student_data = {
+    'Name': ['Anu', 'Raj', 'Maya', 'Vikram', 'Sara'],
+    'Math': [85, 78, 92, 65, 88],
+    'Science': [75, 88, 91, 70, 85],
+    'English': [82, 79, 85, 90, 88]
+}
+
+students = pd.DataFrame(student_data)
+
+# 1. Display all students who scored more than 80 in Math
+print("\nStudents scoring more than 80 in Math:")
+print(students[students['Math'] > 80])
+
+# 2. Sort the DataFrame in descending order based on Science scores
+sorted_science = students.sort_values(by='Science', ascending=False)
+print("\nStudents sorted by Science score (descending):")
+print(sorted_science)
+
+# 3. Find the student with the highest English score
+max_english = students[students['English'] == students['English'].max()]
+print("\nStudent with the highest English score:")
+print(max_english)
