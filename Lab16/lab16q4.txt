@@ -1,0 +1,9 @@
+sales = [100, 150, 200, 250, 300, 350, 400]
+profit = [20, 30, 50, 65, 70, 90, 110]
+
+plt.scatter(sales, profit, color='green')
+plt.title('Sales vs Profit')
+plt.xlabel('Sales ($)')
+plt.ylabel('Profit ($)')
+plt.grid(True)
+plt.show()

@@ -1,0 +1,12 @@
+weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 4']
+product_A_sales = [150, 200, 180, 220]
+product_B_sales = [130, 170, 160, 210]
+
+plt.plot(weeks, product_A_sales, label='Product A', marker='o')
+plt.plot(weeks, product_B_sales, label='Product B', marker='s')
+plt.title('Sales Comparison Over a Month')
+plt.xlabel('Weeks')
+plt.ylabel('Sales ($)')
+plt.legend()
+plt.grid(True)
+plt.show()
